@@ -11,7 +11,44 @@ and open the template in the editor.
 h1{
     color: brown;
 }
-
-body{
-    background: #ffff80;
+a{
+text-decoration: none;    
 }
+body{
+    background: #808080;
+}
+p{/*border: 5px;*/
+  color: turquoise;
+  padding: 2em;
+  border: none;
+}
+
+#underline{
+    text-decoration:  underline;
+}
+ul{
+    list-style: none;
+    
+}
+.centro{
+    text-align: center;
+    font-style: italic; 
+    
+}
+.derecha{     
+    text-align: right;
+    font-family: Comic-sans;
+}
+table{
+    background: black;
+    color: magenta;
+}
+.negritas{
+    font-weight: bold; 
+}
+
+/*
+#  = id  <-- unico; al menos en cada html (quiza funcione pero no es lo correcto)
+.  = clase
+free code camp 
+*/

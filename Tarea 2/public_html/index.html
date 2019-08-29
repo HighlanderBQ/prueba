@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+
+https://getbootstrap.com/docs/4.3/layout/grid/
+TAREA -> https://getbootstrap.com/docs/4.3/components/alerts/ 
+
+ofset-- espaciado
+md-- tomar medidas en caso de agrandar o reducir segun el dispositivo (celular/computadora)
+
+
 -->
 <html>
     <head>
+        <!--lo que ocupa el navegador (HEAD)-->
+         <title>TODO supply a title</title>
         
-        <link rel="stylesheet" type="text/css" href="estilo.css">
+     <link rel="stylesheet" type="text/css" href="estilo.css">
+     
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
+        <!---->
         
-        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>        
         
-        <h1>Acerca de mi</h1>
+        
+        
+        
+    </head>
+    
+    
+    
+    <body>
+        <!--contenedor principal-->
+        
+        <div class="container">
+            <div class="row">
+                <div class="row" id="encabezado">ENCABEZADO
+                </div>
+            </div>
+            
+        
+            <div class="row">
+                <div class="col" id="menu">MENU
+                </div>
+            </div>
+        
+            <div class="col" id="busqueda">BUSQUEDA
+            </div>
+            
+        <div class="row">
+            <div class="col" id="contenido">
+                <div class="row">
+                    <div class="col-8">Uno
+                        <div class="col-5">Dos
+                            
+                        </div>
+                    </div>
+                </div>
+                CONTENIDO
+                <div class="col" id="submenu">
+                    SUBMENU
+                </div>
+            </div>
+        </div>
+            
+            <div class="row">
+            <div class="col" id="foot">PIE DE PAGINA
+            </div>
+            </div>
+        </div>
+        
+        <h1 class="derecha">Acerca de mi</h1>
 	<p>parrafo 1
 	<p>parrafo 2
 	
@@ -28,7 +84,7 @@ and open the template in the editor.
 		<li>Viajar</li>		
 	</ul>
 	
-	<h1>Historia académica</h1>
+        <h1> Historia académica</h1>
 	<ol>
 		<li>Jardin de niños Francisco Villa (2001-2003)</li>
 		<li>Escuela primaria Manuel Lopez Cotilla (2003-2009)</li>
@@ -37,7 +93,7 @@ and open the template in the editor.
 		<li>Centro Universitario de Ciencias Exactas e Ingenierias (2016)</li>		
 	</ol>
 	
-	<h1>Persona que admiro: Brian May</h1>	
+	<h1 id="underline">Persona que admiro: Brian May</h1>	
 		
 		<p><i>Admiro a <b>Brian</b> por varias razones: Él mismo fabricó su propia guitarra con ayuda de su padre,   
 			compuso varias canciones de Queen que me gustan mucho,
@@ -61,11 +117,13 @@ and open the template in the editor.
 		</p>
 	
 	<h1>Temas de interés</h1>
-		<table>
+		<table class="centro">
 		
 			<tr>
-				<td>Tema</td>
-				<td>Clasificación</td>
+                        
+				<td class="negritas">Tema</td>
+				<td class="negritas">Clasificación</td>
+                        
 			</tr>
 		
 			<tr>
