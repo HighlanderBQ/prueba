@@ -1,2 +1,15 @@
-placer 
 pepe pollo
+
+https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself
+https://getbootstrap.com/docs/4.3/components/modal/
+
+servidores web:
+apache
+Nginx
+IIS
+
+BD:
+MySQL
+MariaDB
+SQL Server
+mongoDB (no relacional)
