@@ -13,3 +13,9 @@ MySQL
 MariaDB
 SQL Server
 mongoDB (no relacional)
+
+paquetes servidores 
+XAMPP
+WAMPP
+Laragon (Windows)
+Valet (Mac)
