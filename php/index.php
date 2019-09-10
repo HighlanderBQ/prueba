@@ -5,24 +5,8 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-<?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    
-    
-    try {
-        $conn = new PDO("mysql:host=$servername;dbname=db_metas", $username, $password);
-        // set the PDO error mode to exception
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "Connected successfully";
-        }
-    catch(PDOException $e)
-        {
-        echo "Connection failed: " . $e->getMessage();
-        }
-    
-   
+<?php  
+ include('conexion.php');    
     ?>
     <head>
         <title>Formulario</title>
@@ -93,9 +77,23 @@ and open the template in the editor.
 
             $sql= "INSERT INTO mis_metas (meta, descripcion, plazo) VALUES ('$meta', '$descripcion', '$plazo')";
             $conn->exec($sql);
+            
+       
 
-    }
 /*
+            if(count($metas)){
+                foreach($metas as $values){
+
+                }
+            }
+
+    }*/
+/*
+
+
+
+
+
     if(count ($_GET)>0){
         foreach($_GET as $k => $v){
             echo "$k :: $v <br>";
@@ -103,8 +101,8 @@ and open the template in the editor.
             $meta=$_GET ['meta'];
             $descripcion= $_GET ['descripcion'];
             $plazo= $_GET['plazo'];
-    }
-    */
+    */}
+    
         ?>
         
     </body>
